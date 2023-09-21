@@ -1,0 +1,364 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --primary:  #F747BA;
+  --secondary: #62FEF7;
+  --tertiary: #5c2985;
+  --tertiary-dark: #3D315B;
+  --tertiary-light:  #FED689;
+}
+
+body {
+  margin:0%;
+  padding:0%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: var(--secondary);
+  background-color: var(--tertiary-dark);
+  line-height: 1.5;
+  background-image: url(../css/images/synthwave-8119826_1920.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  margin: 0;
+}
+
+p{
+  margin: 0;
+}
+
+header{
+  padding: 15px  6% 15px 0;
+  border-radius: 50px;
+  border-width: 1px;
+  border-style: solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  box-shadow:0 5px 35px black;
+  background-image: url(../css/images/sunset-palm-trees.png);
+  background-position: bottom;
+  
+}
+img {
+  margin-right: 30%;
+  border-radius: 100px;
+  border: var(--secondary);
+  border-width: 2px;
+  border-color: var(--secondary);
+  border-style: double;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  
+}
+header h1 {
+  color: var(--secondary);
+  background-color: var(--tertiary-dark);
+  padding: 5px 1% 5px 6%;
+  margin: 0;
+  font-size: 55px;
+  line-height: 1;
+  border-radius: 50px;
+  border-width: 1px;
+  border-style: solid;
+  background-image: url(../css/images/sunset-palm-trees.png);
+  background-position: top;
+  background-repeat:no-repeat;
+  background-size: 100%;
+  text-shadow: 2px 2px var(--primary);
+}
+
+Footer {
+  color: var(--secondary);
+  padding: 5px 1% 5px 6%;
+  margin: 0;
+  border-radius: 50px;
+  border-width: 1px;
+  border-style: double;
+  background-image: url(../css/images/sunset-palm-trees.png);
+  
+}
+Footer h1 {
+  text-decoration: none;
+  text-shadow: 2px 2px var(--primary);
+  text-align: center;
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+}
+
+nav a{
+  text-decoration:overline;
+  padding: 5px 10px;
+  color: var(--secondary);
+  margin-right: 10px;
+  background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 100%);
+  background-repeat: no-repeat;
+  background-size: 100%  0.2em;
+  background-position:  top;
+  transition: all 0.50s ease-in-out;
+  font-size: 1.4rem;
+  border-radius: 50px;
+  border-width: 1px;
+  border-style: solid;
+  text-shadow: 2px 2px var(--primary);
+
+}
+
+nav a:hover {
+  background-size: 100% 100%;
+  color: var(--primary);
+  text-shadow: 2px 2px var(--tertiary-dark);
+}
+nav a:last-child{
+  margin-right: 0;
+}
+
+main{
+  margin-top: 20px;
+  margin-bottom: 45px;
+}
+
+.hero-banner {
+  background-color: var(--tertiary-light);
+  background-image: url(../css/images/Mountain-triangle.jpg);
+  background-size:contain;
+  background-position: center;
+  background-blend-mode:hard-light;
+  min-height: 15vh;
+  color: var(--tertiary-light);
+  padding: 2% 6%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 25px;
+  border-radius: 50px;
+  border-width: 3px;
+  border-style: double;
+  border-color: var(--primary);
+}
+.hero-banner h2 {
+  font-size: 25px;
+  color: var(--secondary);
+  border-style: double;
+  border-radius: 20px;
+  background-image: url(../css/images/sunset-palm-trees.png); 
+  background-position: top;
+  background-repeat:no-repeat;
+  background-size: 100%;
+  text-shadow: 2px 2px var(--primary);
+  text-align: left;
+  
+}
+
+.hero-banner div {
+  flex: 0 0 35%;
+}
+
+.page-wrapper {
+  max-width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-section {
+  margin: 25px 0;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.page-section h2 {
+  flex: 0 0 20%;
+  text-align: center;
+  padding-right: 15px;
+  border: 4px solid var(--primary);
+  border-style:double;
+  border-radius: 20px;
+  font-size: 40px;
+  line-height: 2;
+  text-shadow: 5px 5px var(--primary);
+}
+
+.page-section > div {
+  flex: 0 0 79%;
+  margin-top: -23px;
+
+}
+
+.page-section p {
+  text-shadow: 2px 2px  var(--tertiary-dark);
+  margin-top: 40px;
+  text-align: center;
+  margin-bottom: 10px;
+
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
+.flex-item {
+  border: 5px double var(--primary);
+  background-color: var(--tertiary-dark);
+  color: var(--tertiary);
+  min-height: 150px;
+  max-height: 150px;
+  flex-basis: calc(50% - 1em);
+  display: flex;
+  align-items: flex-end;
+  padding: 0 0 20px 0;
+  margin: 0.5em;
+  text-decoration: none;
+  background-blend-mode: hard-light;
+  background-size: 150%;
+  transition:all 0.5s;
+  font-size: 0.9rem;
+}
+
+.flex-item:first-child{
+  min-height: 400px;
+  flex-basis: 100%;
+}
+
+.flex-item :hover{
+  background-color: var(--tertiary-dark);
+}
+
+.flex-item div{
+  background-color: var(--secondary);
+  padding: 8px 10px;
+}
+
+.flex-item h3{
+  font-size: 1.6rem;
+}
+
+.contact address a {
+  color: var(--primary);
+  padding: 5px;
+  text-decoration: none;
+  font-size: 40px;
+  font-style: normal;
+  background-image: linear-gradient(270deg, var(--primary) 0%, var(--primary) 100%);
+  background-repeat: no-repeat;
+  background-size: 25% 0.2em;
+  background-position: top;
+  transition: all 0.25s ease-in-out;
+  margin:  0 0.2rem 0.1rem;
+  display: inline-block;
+  border-radius: 50px;
+
+}
+
+.contact address a:hover{
+  background-size: 100% 88%;
+  color:var(--tertiary-light);
+
+}
+
+.run-buddy {
+  background-image: url(../css/images/balls.jpg);
+  background-position: top;
+}
+
+.synth-wall {
+  background-image: url(../css/images/city.jpg);
+}
+
+.react-calc{
+  background-image: url(../css/images/tower.jpg);
+  background-position: center;
+}
+
+.pastel-puzzles {
+  background-image: url(../css/images/vaporwave.jpg);
+  background-position: center;
+}
+
+.surf-report {
+  background-image: url(../css/images/car.jpg);
+  background-position: center;
+}
+
+@media screen and (max-width:980px) {
+  header {
+    padding: 0 0 10px 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  header h1 {
+    width: 100%;
+    padding:5px;
+    margin-bottom: 10px;
+    font-size: 75px;
+  }
+  header nav {
+    justify-content: center;
+  }
+  img {
+   flex: -1 0 14%;
+
+  }
+  .page-section > h2,
+  .page-section >div {
+    flex: 0 0 100%;
+  }
+
+  .page-section >h2 {
+    border-right: none;
+    border-bottom:4px double var(--primary);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    text-align:left;
+    font-size: 52px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .flex-item,
+  .flex-item:first-child {
+    flex-basis: 100%; 
+  }
+  
+  .flex-item:first-child {
+    min-height: 150px;
+  }
+  .hero-banner {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .contact address {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  img {
+      flex: 0 0 14%;
+      
+  }
+}
